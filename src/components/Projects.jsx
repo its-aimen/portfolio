@@ -1,0 +1,61 @@
+import React from 'react'
+
+const Projects = () => {
+  return (
+
+    
+    <div id="projects" className='app-showcase'>
+
+      <div className="w-full">
+          <div className="text">
+             <h2 className=" mb-5 text-center white font-bold text-4xl">
+            Featured Projects</h2>
+          <p  className="items-center mb-13"> Here are some of the projects I've built while learning, experimenting, and turning ideas into functional experiences. </p>
+          </div>  
+        <div className="showcaselayout">
+          {/*Left*/}
+          <div className="first-project-wrapper transition-all duration-300 hover:-translate-y-1">
+            <div className="image-wrapper">
+           <img src="public/Project1.png" />
+           </div>
+           <div className='text-content'>
+            <h2> A responsive Food Delivery frontend built with React, designed to provide a smooth and engaging user experience. </h2>
+            <p className='text-white-50 md: text-base'>
+            The platform includes interactive menu browsing, cart management, and a seamless checkout flow with a clean, modern interface.</p>
+
+           </div>
+          </div>
+
+
+          
+          {/*Right*/}
+          <div className='project-list-wrapper overflow-hidden'>
+            <div className='project transition-all duration-300 hover:-translate-y-1'>
+              <div className='image-wrapper bg-[#ffefdb]'>
+                <img src="Project2.png" alt="" />
+              </div>
+              <h2> React Movie App </h2>
+
+            </div>
+
+              <div className='project transition-all duration-300 hover:-translate-y-2'>
+              <div className='image-wrapper bg-[#ffe7eb]'>
+                <img src="Project3.png" alt="" />
+              </div>
+              <h2> Portfolio </h2>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    
+    </div>
+  )
+}
+
+export default Projects
