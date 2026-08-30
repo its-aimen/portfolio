@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Projects = () => {
   return (
@@ -16,7 +15,7 @@ const Projects = () => {
           {/*Left*/}
           <div className="first-project-wrapper transition-all duration-300 hover:-translate-y-1">
             <div className="image-wrapper">
-           <img src="public/Project1.png" />
+           <img src="Project1.png" />
            </div>
            <div className='text-content'>
             <h2> A responsive Food Delivery frontend built with React, designed to provide a smooth and engaging user experience. </h2>
