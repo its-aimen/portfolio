@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -59,27 +59,27 @@ console.log("Text:", error.text);
 
   return (
     /*{Left}*/
-    <section id="contact" className=' relative flex items-center justify-between mb-40 ' >
+    <section id="contact" className='relative flex flex-col lg:flex-row items-center justify-between mb-40 gap-10 px-4 lg:px-0' >
         <form  ref={formRef} onSubmit={handleSubmit} >
-        <div  className=' mt-3 w-140 h-120 text-left ml-40'>
+        <div  className='mt-3 w-full max-w-140 h-auto lg:h-120 text-left mx-auto lg:ml-40'>
 
             <h2 className='text-center  text-white text-3xl font-bold pt-10'> Get In Touch with Me</h2>
 
 <div className="">
        <p className='pt-8'> Name </p>
-       <input className=' rounded-md w-140 h-12 mt-3 bg-[#18181b] text-white border-2' type="text" 
+       <input className='rounded-md w-full h-12 mt-3 bg-[#18181b] text-white border-2' type="text" 
         name="name" placeholder=" Your name" value={form.name} onChange={handleChange} required />
 </div>
 
 <div className="box">
        <p className='pt-5'> Email </p>
-       <input className=' rounded-md w-140 h-12 mt-3 bg-[#18181b] text-white border-2' type="email"
+       <input className='rounded-md w-full h-12 mt-3 bg-[#18181b] text-white border-2' type="email"
         name="email" placeholder="Your email address" value={form.email} onChange={handleChange} required />
 </div>
 
 <div className="big-box">
        <p className='pt-5' > Message </p>
-       <textarea className=' rounded-md w-140 h-40 mt-3 bg-[#18181b] text-white border-2'
+       <textarea className='rounded-md w-full h-12 mt-3 bg-[#18181b] text-white border-2'
        name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required />
 </div>
 
@@ -96,9 +96,9 @@ console.log("Text:", error.text);
 
         </form>
 
-        <div className=' flex justify-center mr-20'>
+        <div className='hidden lg:flex justify-center mr-20'>
             
-        <img className='w-123 h-130 relative top-30' 
+        <img className='w-full max-w-[400px] lg:w-123 lg:h-130 relative lg:top-30' 
         src='/connect.png' alt=""/>
 
 

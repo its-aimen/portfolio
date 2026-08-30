@@ -32,7 +32,7 @@ export const SkillsSection = () => {
 ];
 
     return(
-    <section id="skills" className="relative bg-black/85 m-20 20 ">
+    <section id="skills" className="relative bg-black/85 mx-4 md:mx-20 my-20">
 
        
 
@@ -40,11 +40,11 @@ export const SkillsSection = () => {
             How I Can Contribute & My Key Skills
         </h2>
 
-           <p className=" border-b-2 border-purple-500 pb-2  absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 font-bold text-2xl text-white "> 
+           <p className=" hidden md:block border-b-2 border-purple-500 pb-2 absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 font-bold text-2xl text-white "> 
             SKILLS </p>
 
       
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 px-20 pt-10 pb-20" >
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 px-4 md:px-20 pt-10 pb-20" >
   {skills.map((skill) => {
     const Icon = skill.icon;
 

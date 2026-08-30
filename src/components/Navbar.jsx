@@ -13,12 +13,12 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <div className="ml-15 mt-7 container flex items-center justify-between">
+       <div className="ml-4 md:ml-15 mt-7 container flex items-center justify-between">
 
        
         <a
           href="#hero"
-          className="mt-10 fixed top-0 left-18 w-full z-50 text-xl font-bold text-primary flex items-center"
+          className="mt-10 fixed top-0 left-4 md:left-18 z-50 text-lg md:text-xl font-bold text-primary flex items-center"
         >
           <span className="relative z-10 text-glow text-foreground">
             Aimen's <span>Portfolio</span>
@@ -41,7 +41,7 @@ export const Navbar = () => {
        
         <a 
           href="#contact"
-          className=" fixed top-7 right-15 z-50 mr-15 hidden md:block bg-white text-black px-4 py-2 rounded-md"
+         className="fixed top-7 right-4 md:right-15 z-50 hidden md:block bg-white text-black px-4 py-2 rounded-md"
         >
           Contact
         </a>
