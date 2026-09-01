@@ -98,7 +98,7 @@ console.log("Text:", error.text);
 
         <div className='hidden lg:flex justify-center mr-20'>
             
-        <img className='w-full max-w-[400px] lg:w-123 lg:h-130 relative lg:top-30' 
+        <img className='w-full max-w-[500px] lg:w-123 lg:h-130 relative lg:top-30' 
         src='/connect.png' alt=""/>
 
 
