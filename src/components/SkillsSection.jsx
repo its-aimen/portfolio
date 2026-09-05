@@ -14,8 +14,6 @@ import {
   SiVite,
 } from "react-icons/si";
 
-import { VscVscode } from "react-icons/vsc";
-
 export const SkillsSection = () => {
 
   const skills = [
@@ -36,11 +34,11 @@ export const SkillsSection = () => {
 
        
 
-        <h2 className="text-center white font-bold text-4xl mb-10 mt-20 pt-10">
-            How I Can Contribute & My Key Skills
+        <h2 className="text-center text-foreground font-bold text-4xl mb-10 mt-20 pt-10">
+            Skills & Tools
         </h2>
 
-           <p className=" hidden md:block border-b-2 border-purple-500 pb-2 absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 font-bold text-2xl text-white "> 
+           <p className=" hidden md:block border-b-2 border-purple-500 pb-2 absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 font-bold text-2xl text-foreground "> 
             SKILLS </p>
 
       
@@ -53,8 +51,8 @@ export const SkillsSection = () => {
         key={skill.name}
         className="bg-card p-6 rounded-xl shadow-lg flex flex-col items-center hover:-translate-y-2 transition-all"
       >
-        <Icon className="text-6xl mb-4" />
-        <h3>{skill.name}</h3>
+        <Icon className="text-6xl mb-4 text-primary" />
+        <h3 className="text-foreground font-medium">{skill.name}</h3>
       </div>
     );
   })}

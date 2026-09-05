@@ -49,14 +49,15 @@ export const Navbar = () => {
         {/* Mobile Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden"
+          className="md:hidden fixed top-5 right-4 z-50 text-foreground"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 w-full flex flex-col items-center gap-4 bg-background py-6 md:hidden">
+          <div className="fixed top-16 left-0 w-full flex flex-col items-center gap-4 bg-background py-6 md:hidden z-40 shadow-lg">
             {navItems.map((item) => (
               <a
                 key={item.name}

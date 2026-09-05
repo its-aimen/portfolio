@@ -8,9 +8,9 @@
 
     --color-primary:hsl(var(--primary));
     --color-primary-foreground:hsl(var(--primary-foreground));
+    --color-muted-foreground:hsl(var(--muted-foreground));
 
      --color-card:hsl(var(--card));
-     --color-primary:hsl(var(--primary));
 
      
   --animate-float: float 6s ease-in-out infinite;
@@ -79,16 +79,11 @@
 
     --card: 250 18% 10%;
     --border: 250 15% 18%;
+    --muted-foreground: 222 15% 40%;
     }
 
     .dark {
-    --background:   background-color: #0a0508;
-  background-image:
-    radial-gradient(ellipse 60% 70% at 50% 45%, rgba(147, 51, 219, 0.55) 0%, rgba(88, 28, 135, 0.35) 35%, rgba(10, 5, 8, 0) 70%),
-    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(126, 34, 206, 0.35) 0%, rgba(10, 5, 8, 0) 60%),
-    linear-gradient(180deg, #0a0508 0%, #0d0410 50%, #0a0508 100%);
-  background-blend-mode: screen, screen, normal;
-  border-radius: 24px;
+    --background: 260 45% 3%;
     --foreground: 0 0% 98%;
 
     --primary: 270 90% 65%;
@@ -96,6 +91,7 @@
 
     --card: 250 18% 10%;
     --border: 250 15% 18%;
+    --muted-foreground: 250 10% 70%;
     }
 
     * {
@@ -109,6 +105,15 @@
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .dark body {
+    background-image:
+      radial-gradient(ellipse 60% 70% at 50% 45%, rgba(147, 51, 219, 0.55) 0%, rgba(88, 28, 135, 0.35) 35%, rgba(10, 5, 8, 0) 70%),
+      radial-gradient(ellipse 80% 60% at 50% 100%, rgba(126, 34, 206, 0.35) 0%, rgba(10, 5, 8, 0) 60%),
+      linear-gradient(180deg, #0a0508 0%, #0d0410 50%, #0a0508 100%);
+    background-blend-mode: screen, screen, normal;
+    background-attachment: fixed;
   }
 
 }
@@ -190,10 +195,10 @@
       @apply h-full flex flex-col justify-between xl:w-[60%] ml-10;
 
       .image-wrapper {
-        @apply xl:h-[60vh] md:h-[40vh] h-20 relative;
+        @apply xl:h-[60vh] md:h-[40vh] h-52 relative overflow-hidden;
 
         img {
-          @apply w-150 h-full object-cover rounded-xl absolute inset-0 border-4;
+          @apply w-full h-full object-cover rounded-xl absolute inset-0 border-4;
         }
       }
 
@@ -214,11 +219,11 @@
       @apply flex md:flex-row flex-col xl:flex-col gap-5 xl:w-[35%] mr-10;
 
       .image-wrapper {
-        @apply xl:h-[40vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-5 border-4;
+        @apply xl:h-[40vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-5 border-4 overflow-hidden;
       }
 
       img {
-        @apply w-150 h-full object-contain rounded-xl ;
+        @apply w-full h-full object-contain rounded-xl ;
       }
 
       h2 {
